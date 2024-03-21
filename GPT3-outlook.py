@@ -3,12 +3,12 @@ import bs4
 import openai
 import time
 
-openai.api_key = "" # obtained via https://platform.openai.com/account/api-keys
+openai.api_key = "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" # obtained via https://platform.openai.com/account/api-keys
 
 outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
 inbox = outlook.GetDefaultFolder(6)
 messages = inbox.Items
-signature = "" # your signature, use \n for newline
+signature = "Grant Huang(auto)" # your signature, use \n for newline
 
 while True:
     messages = inbox.Items
